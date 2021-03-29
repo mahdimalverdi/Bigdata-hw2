@@ -1,4 +1,4 @@
-hadoop jar hadoop-streaming-2.7.1.jar -D mapred.reduce.tasks=16 \
+hadoop jar hadoop-streaming-2.7.1.jar -D  mapreduce.job.reduces=16 \
 -file mapper.py    -mapper mapper.py \
 -file reducer.py   -reducer reducer.py \
--input SalesJan2009.csv -output countries.txt
+-input hw-2/SalesJan2009.csv -output hw-2/countries
